@@ -1,0 +1,14 @@
+{
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/test/setupTest.ts"
+  ],
+  "testEnvironment": "jest-environment-jsdom",
+  "moduleDirectories": [
+    "node_modules", "testing"
+  ],
+  "moduleNameMapper": {
+    "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/src/test/fileMock.ts",
+    "\\.(css|less)$": "<rootDir>/src/test/fileMock.ts"
+  },
+  "collectCoverage": true
+}
